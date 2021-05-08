@@ -20,7 +20,7 @@ router.post('/', function (req, res, next) {
 
     var data = new Insta.PaymentData();
 
-    const REDIRECT_URL = "/success";
+    const REDIRECT_URL = "https://coviddonation.herokuapp.com/success";
 
     data.setRedirectUrl(REDIRECT_URL);
     data.send_email = "True";
