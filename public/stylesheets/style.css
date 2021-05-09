@@ -1,7 +1,11 @@
 body {
   /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background: url('../images/donation.jpeg') no-repeat center center fixed;
+  background: url('../images/donation.jpeg') no-repeat center;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   
 }
 
@@ -10,7 +14,6 @@ a {
 }
 
 .donation{
-  background: url('../images/donation.jpeg') no-repeat center center fixed;
   width: 100%;
   height: 100vh;
   padding: 60px;
@@ -49,9 +52,9 @@ a {
 
 .container{
   width: 100%;
-  height: 100vh;
+  height: 100vh; 
   padding: 60px;
-}
+} 
 .container h1{
   font-weight: 800;
   font-size: 4rem;
@@ -81,4 +84,48 @@ a {
 }
 .success h1{
   margin-top: 180px;
+}
+
+
+
+@media only screen and (min-width:300px){
+  body{
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+  }
+  .donation h1{
+    margin-left: 5px;
+  }
+  .donation p{
+    margin-left: 5px;
+  }
+  .donation button{
+    margin-left: 20px;
+    margin-top: 50px;
+  }
+  .container h1{
+    margin-left: 5px;
+  }
+  .container h2{
+    margin-left: 5px;
+    margin-top: 0px;
+  }
+  .container p{
+    margin-left: 5px;
+  }
+  .container button{
+    margin-left: 30%;
+    margin-top: 5px;
+  }
+  .details input{
+    margin-left: 5px;
+    margin-top: 0px;
+    width: 90%;
+  }
+  .success h1{
+  margin-top: 10px;
+  
+  }
 }
