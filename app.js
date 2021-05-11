@@ -9,6 +9,7 @@ var indexRouter = require('./routes/index');
 var donateRouter = require('./routes/donate');
 var payRouter = require('./routes/pay');
 var successRouter = require('./routes/success');
+var paypalRouter = require('./routes/paypal');
 
 var app = express();
 
@@ -30,6 +31,10 @@ app.use('/', indexRouter);
 app.use('/donate', donateRouter);
 app.use('/pay', payRouter);
 app.use('/success', successRouter);
+app.use('/paypal', paypalRouter);
+app.get('/error',(req,res) => res.send('Payment error'));
+app.get('/cancel',(req,res) => res.send('Payment canceled'));
+
 
 
 module.exports = app;

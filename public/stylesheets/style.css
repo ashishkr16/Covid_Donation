@@ -39,6 +39,7 @@ a {
   font-size: 2rem;
   margin-left: 840px;
   margin-top: 610px;
+  margin-bottom: 20px;
 
 }
 .details input{
@@ -88,7 +89,7 @@ a {
 
 
 
-@media only screen and (min-width:300px){
+@media only screen and (max-width:600px){
   body{
     -webkit-background-size: cover;
      -moz-background-size: cover;
@@ -128,4 +129,7 @@ a {
   margin-top: 10px;
   
   }
+}
+.paypal-button-container{
+  margin-top: 20px;
 }

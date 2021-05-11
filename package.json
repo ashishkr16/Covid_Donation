@@ -14,7 +14,8 @@
     "http-errors": "~1.6.3",
     "instamojo-nodejs": "^0.0.5",
     "jade": "~1.11.0",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "paypal-rest-sdk": "^1.8.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.7"
